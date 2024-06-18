@@ -39,4 +39,4 @@ jobs:
 
     #Build Docker Image
     - name: Build the Docker image
-      run: docker build . --file web-crawler-service/Dockerfile --tag web-crawler-service:$(date +%s)
+      run: docker build web-crawler-service --file web-crawler-service/Dockerfile --tag web-crawler-service:latest
