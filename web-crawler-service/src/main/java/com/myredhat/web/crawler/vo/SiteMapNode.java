@@ -2,6 +2,8 @@ package com.myredhat.web.crawler.vo;
 
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class SiteMapNode {
 
 
@@ -10,6 +12,7 @@ public class SiteMapNode {
 
     final int nodeLevel;
 
+    @JsonIgnore
     private final boolean external;
 
     public SiteMapNode(String url, SiteMapNode patentNode, boolean external) {
