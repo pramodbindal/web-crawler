@@ -14,3 +14,13 @@ docker build web-crawler-service --file web-crawler-service/Dockerfile --tag web
 <code>
 docker run -dit -p 8080:8080 --name web-crawler-service web-crawler-service:latest
 </code>
+
+
+<h2> Running Web-Crawler Client </h2>
+<code>
+    cd web-crawler-client
+
+    java -jar build/libs/web-crawler-client-1.0.jar "https://www.redhat.com/"
+</code>
+
+
